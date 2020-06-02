@@ -79,8 +79,8 @@ end
 def all_holidays_with_bbq(holiday_hash)
     new_array = [] # return an array of holiday names (as symbols) where supply lists
     holiday_hash.keys.each do |season| # iterate over the keys(seasons) in your holiday_hash.
-      holiday_hash[season].each do |key, value| # iterate over inner hash where season is the key.            
-        new_array << key if value.include? 'BBQ'   #include the string "BBQ"
+      holiday_hash[season].each do |key, value| #iterate over inner hash where season is the key.            
+        new_array << key if value.include? 'BBQ' #include the string "BBQ"
       end
     end
     new_array
